@@ -567,7 +567,7 @@ input.button.disable {
 	.dialog-content {
 		padding: 24px 30px;
 	}
-	.rules{width: 80%;margin: 0 auto;}
+	.rules{width: 90%;margin: 0 auto;}
 }
 @media screen and (min-width: 540px) {
 	.jilu .end, .jilu .end img {
