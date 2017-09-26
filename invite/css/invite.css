@@ -33,8 +33,8 @@ body {
 	background: #F25610;
 	max-width: 640px;
 	margin: 0 auto;
-	    padding-bottom: 10px;
-	    overflow: auto;
+	padding-bottom: 10px;
+	overflow: auto;
 }
 a {
 	text-decoration: none;
@@ -119,7 +119,10 @@ body.hidden {
 }
 
 /*main css start*/
-.container{margin-bottom: 15px;}
+
+.container {
+	margin-bottom: 15px;
+}
 .banner {
 	width: 100%;
 	display: block;
@@ -186,6 +189,7 @@ input.button {
 	line-height: 1.5rem;
 	padding: 9px 0;
 	max-width: 400px;
+	cursor: pointer;
 }
 input.button.disable {
 	background: #DCDCDC;
@@ -230,13 +234,15 @@ input.button.disable {
 	padding: 0 10px 35px 10px;
 	letter-spacing: 0.03px;
 }
-.rules li{margin-bottom: 5px;}
+.rules li {
+	margin-bottom: 5px;
+}
 .failed1, .failed2 {
 	text-align: center;
 	font-family: PingFang-SC-Regular;
 	color: #333333;
 }
-.failed1 h2,.failed2 h2 {
+.failed1 h2, .failed2 h2 {
 	font-size: 20px;
 	letter-spacing: 0.04px;
 	line-height: 1.5rem;
@@ -253,7 +259,9 @@ input.button.disable {
 	padding-top: 44px;
 	margin: 0 auto 30px auto;
 }
-.failed2 h2+div{padding-top: 20px;}
+.failed2 h2 + div {
+	padding-top: 20px;
+}
 .hide, input.hide {
 	display: none;
 }
@@ -323,7 +331,7 @@ input.button.disable {
 	margin-top: 10px;
 }
 .jilu .box-bottom {
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 }
 .no-friends {
 	width: 120px;
@@ -442,7 +450,9 @@ input.button.disable {
 	color: #929292;
 	letter-spacing: 0.03px;
 }
-.friend-list li .center span.failed{color: #FF2822;}
+.friend-list li .center span.failed {
+	color: #FF2822;
+}
 .friend-list li input.button {
 	max-width: 74px;
 	margin: 0 auto;
@@ -454,8 +464,13 @@ input.button.disable {
 	white-space: nowrap;
 	padding: 0 5px;
 }
-/*.friends,.friends-full{position: relative;padding-bottom: 15px;}*/
-.friends-full .dec-3{margin-bottom: 8px;}
+
+.friends,.friends-full{position: relative;}
+
+.friends-full .dec-3 {
+	margin-bottom: 8px;
+}
+
 /*弹出框*/
 
 .dialog {
@@ -567,7 +582,10 @@ input.button.disable {
 	.dialog-content {
 		padding: 24px 30px;
 	}
-	.rules{width: 90%;margin: 0 auto;}
+	.rules {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 @media screen and (min-width: 540px) {
 	.jilu .end, .jilu .end img {
@@ -593,3 +611,21 @@ input.button.disable {
 @media all and (orientation:landscape) {
 	.css {}
 }
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	/*left: -9999px;*/
+	width: 100%;
+	overflow: auto;
+	/*background: #fff;*/
+}
+#scroller {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	
+	padding-bottom: 20px;
+}
+#pullDown{color: #fff;text-align: center;margin: 0px auto;width: 100%; padding: 10px 0;}
+#pullUp{padding: 0 0 20px 0;}
+/*#wrapper,#scroller{min-height: 450px;}*/
