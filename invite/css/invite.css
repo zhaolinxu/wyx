@@ -230,7 +230,7 @@ input.button.disable {
 	padding: 0 10px 35px 10px;
 	letter-spacing: 0.03px;
 }
-.rules li{margin-bottom: 55px;}
+.rules li{margin-bottom: 5px;}
 .failed1, .failed2 {
 	text-align: center;
 	font-family: PingFang-SC-Regular;
@@ -567,6 +567,7 @@ input.button.disable {
 	.dialog-content {
 		padding: 24px 30px;
 	}
+	.rules{width: 80%;margin: 0 auto;}
 }
 @media screen and (min-width: 540px) {
 	.jilu .end, .jilu .end img {
